@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-         <h1> Installed React Router </h1>
+         <h1> Installed React Dom </h1>
         </header>
       </div>
     );
