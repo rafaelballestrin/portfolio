@@ -3,14 +3,16 @@
 }
 
 .App-body {
-  background-color: #282c34;
+  background-color: white;
+  border: 10px solid #494c4e;
+  margin: 0px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #494C4E;
 }
 
 .App-link {
