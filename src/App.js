@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
+import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
+import Menu from './Menu/Menu';
+import Home from './Home/Home.js';
+import AboutMe from './AboutMe/AboutMe';
+import Projects from './Projects/Projects';
+import Contact from './Contact/Contact';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-         <h1>Installed React ROUTER Dom</h1>
-        </header>
-      </div>
+      <HashRouter>
+        <div className="App">
+          <div className="App-body">
+            <Menu />
+            <Route exact path='/' component={Home} />
+            <Route exact path='/aboutme' component={AboutMe} />
+            <Route exact path='/projects' component={Projects} />
+            <Route exact path='/contact' component={Contact} />
+          </div>
+        </div>
+      </HashRouter>
     );
   }
 }
