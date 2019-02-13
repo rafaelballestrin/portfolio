@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../MenuResponsive/MenuResponsive.css'
+import '../MenuResponsive/MenuResponsive.css';
+import '../MenuResponsive/MyFunction'
 
 export default function MenuResponsive() {
     return (
@@ -17,13 +18,4 @@ export default function MenuResponsive() {
             </div>
         </div>
     )
-}
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
 }

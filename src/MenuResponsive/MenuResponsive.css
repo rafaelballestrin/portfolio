@@ -18,7 +18,7 @@
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: white;
-    color: yellow;
+    color: #0099F1;
   }
   
   /* Add an active class to highlight the current page */
