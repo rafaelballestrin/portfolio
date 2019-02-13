@@ -12,6 +12,7 @@ class App extends Component {
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <h1>This is going to be my Portfolio APP!!!</h1>
+          <h1>I <3 GitHub</h1>
           <a
             className="App-link"
             href="https://reactjs.org"
