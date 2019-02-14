@@ -1,21 +1,77 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../MenuResponsive/MenuResponsive.css';
-import '../MenuResponsive/MyFunction'
+import './MenuResponsive.css'
 
-export default function MenuResponsive() {
-    return (
-        <div>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-            <div class="topnav" id="myTopnav">
-                <Link to='/'>Home</Link>
-                <Link to='/aboutme'>About Me</Link>
-                <Link to='/projects'>Projects</Link>
-                <Link to='/contact'>Contact</Link>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+export default class NavContainer extends Component {
+
+    render() {
+        return (
+            <div className="nav_container">
+                <div className="site_title"></div>
+                {this.renderNavigation()}
             </div>
-        </div>
-    )
+        )
+    }
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            windowWidth: window.innerWidth,
+            mobileNavVisible: false
+        };
+    }
+
+    handleResize() {
+        this.setState({ windowWidth: window.innerWidth });
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', this.handleResize.bind(this));
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleResize.bind(this));
+    }
+
+    navigationLinks() {
+        return [
+            <ul>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/aboutme'>About Me</Link></li>
+                <li><Link to='/projects'>Projects</Link></li>
+                <li><Link to='/contact'>Contact</Link></li>
+            </ul>
+        ];
+    }
+
+    renderMobileNav() {
+        if (this.state.mobileNavVisible) {
+            return this.navigationLinks();
+        }
+    }
+
+    handleNavClick() {
+        if (!this.state.mobileNavVisible) {
+            this.setState({ mobileNavVisible: true });
+        } else {
+            this.setState({ mobileNavVisible: false });
+        }
+    }
+
+    renderNavigation() {
+        if (this.state.windowWidth <= 1080) {
+            return [
+                <div className="mobile_nav">
+                    <p onClick={this.handleNavClick.bind(this)}><i class="material-icons">view_headline</i></p>
+                    {this.renderMobileNav()}
+                </div>
+            ];
+        } else {
+            return [
+                <div key={7} className="nav_menu">
+                    {this.navigationLinks()}
+                </div>
+            ];
+        }
+    }
 }

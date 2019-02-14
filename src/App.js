@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
-import Menu from './Menu/Menu';
 import MenuResponsive from './MenuResponsive/MenuResponsive'
 import Home from './Home/Home.js';
 import AboutMe from './AboutMe/AboutMe';

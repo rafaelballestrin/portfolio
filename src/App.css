@@ -4,13 +4,13 @@
 
 .App-body {
   background-color: white;
-  border: 10px solid #494c4e;
+  border: 10px solid #004D71;
   margin: 0px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
-  color: #494C4E;
+  color: #004D71;
 }
 
 .App-link {
