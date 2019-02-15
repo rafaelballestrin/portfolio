@@ -40,6 +40,7 @@ export default class NavContainer extends Component {
                 <li><Link to='/aboutme'>About Me</Link></li>
                 <li><Link to='/projects'>Projects</Link></li>
                 <li><Link to='/contact'>Contact</Link></li>
+                <li><Link to='/tooltip'>Tooltip</Link></li>
             </ul>
         ];
     }
