@@ -1,0 +1,25 @@
+.footer-container {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.footer-item {
+    background-color: green;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+.footer-item img {
+    width: 25%;
+    float: center;
+    align-items: center;
+   
+}

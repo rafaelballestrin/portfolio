@@ -35,6 +35,7 @@ export default class NavContainer extends Component {
 
     navigationLinks() {
         return [
+            <div className='menu-container'>
             <ul>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/aboutme'>About Me</Link></li>
@@ -42,6 +43,7 @@ export default class NavContainer extends Component {
                 <li><Link to='/contact'>Contact</Link></li>
                 <li><Link to='/tooltip'>Tooltip</Link></li>
             </ul>
+            </div>
         ];
     }
 

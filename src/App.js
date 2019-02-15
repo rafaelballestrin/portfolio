@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
-import MenuResponsive from './MenuResponsive/MenuResponsive'
+import MenuResponsive from './MenuResponsive/MenuResponsive';
+import Footer from './Footer/Footer';
 import Home from './Home/Home.js';
 import AboutMe from './AboutMe/AboutMe';
 import Projects from './Projects/Projects';
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/tooltip' component={Tooltip} />
+        <Footer />
           </div>
         </div>
       </HashRouter>
