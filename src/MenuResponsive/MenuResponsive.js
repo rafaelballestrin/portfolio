@@ -41,7 +41,6 @@ export default class NavContainer extends Component {
                 <li><Link to='/aboutme'>About Me</Link></li>
                 <li><Link to='/projects'>Projects</Link></li>
                 <li><Link to='/contact'>Contact</Link></li>
-                <li><Link to='/tooltip'>Tooltip</Link></li>
             </ul>
             </div>
         ];
@@ -62,10 +61,10 @@ export default class NavContainer extends Component {
     }
 
     renderNavigation() {
-        if (this.state.windowWidth <= 1080) {
+        if (this.state.windowWidth <= 600) {
             return [
                 <div className="mobile_nav">
-                    <p onClick={this.handleNavClick.bind(this)}><i class="material-icons">view_headline</i></p>
+                    <p onClick={this.handleNavClick.bind(this)}><i class="material-icons">MENU</i></p>
                     {this.renderMobileNav()}
                 </div>
             ];
