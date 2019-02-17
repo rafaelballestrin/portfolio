@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
 import MenuResponsive from './MenuResponsive/MenuResponsive';
-import Footer from './Footer/Footer';
+import LeftSocial from './LeftSocial/LeftSocial';
 import Home from './Home/Home.js';
 import AboutMe from './AboutMe/AboutMe';
 import Projects from './Projects/Projects';
@@ -17,12 +17,12 @@ class App extends Component {
         <div className="App">
           <div className="App-body">
             <MenuResponsive />
+            <LeftSocial />
             <Route exact path='/' component={Home} />
             <Route exact path='/aboutme' component={AboutMe} />
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/tooltip' component={Tooltip} />
-        <Footer />
           </div>
         </div>
       </HashRouter>
