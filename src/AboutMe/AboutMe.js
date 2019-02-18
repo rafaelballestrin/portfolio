@@ -1,9 +1,10 @@
 import React from 'react';
+import './AboutMe.css'
 
 export default function AboutMe() {
     return (
-        <div>
-            <div>
+        <div className='container'>
+            <div className='title'>
                 <h3>AboutMe</h3>
             </div>
             <div className='content'>

@@ -1,4 +1,13 @@
+.container {
+    display: flex;
+}
+
+.title {
+    order: 1
+}
+
 .content {
+    order: 2;
     padding-left: 2em;
     padding-right: 2em;
 }
