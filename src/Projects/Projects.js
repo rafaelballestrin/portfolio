@@ -5,9 +5,9 @@ import Koinalysis from './Images/koinalysis.png'
 
 export default function Projects() {
     return (
-        <div>
+        <div className='main'>
             <div className='projectTitle'>
-                <h3>Projects</h3>
+                <h3>Recent Projects: Samples of some of my work from the past year.</h3>
             </div>
             <div className='container'>
                 <div className='project1'>

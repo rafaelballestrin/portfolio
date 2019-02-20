@@ -7,6 +7,7 @@ import Home from './Home/Home.js';
 import AboutMe from './AboutMe/AboutMe';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route exact path='/aboutme' component={AboutMe} />
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/contact' component={Contact} />
+            <Footer />
           </div>
         </div>
       </HashRouter>

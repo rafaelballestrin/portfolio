@@ -1,24 +1,26 @@
-.footer-container {
-    display: flex;
-    left: 0;
-    bottom: 0;
-    height: 30px;
-    width: 100%;
-    background-color: red;
-    color: white;
+.footer-contact {
+    border-top: 1px solid #f0eeee;
     text-align: center;
+    padding-top: 1em;
+   
 }
 
-.footer-item {
-    background-color: green;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
+.footer-contact p {
+    font-size: 80%;
+    font-family: 'adriane', Georgia, serif;
+    color: #494c4e;
+}
 
-.footer-item img {
-    width: 25%;
-    float: center;
-    align-items: center;
-   
+.footer-copyright {
+    border-top: 1px solid #f0eeee;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.footer-copyright p {
+    font-size: 62.5%;
+    font-family: 'adriane', Georgia, serif;
+    color: #494c4e;
+    -webkit-font-smoothing: antialiased;
 }
