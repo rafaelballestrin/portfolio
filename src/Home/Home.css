@@ -8,3 +8,8 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.title {
+    padding-left: 2em;
+    padding-right: 2em;
+}

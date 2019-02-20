@@ -4,10 +4,12 @@ import HomeBg from './Images/homePhoto.jpg';
 
 export default function Home() {
     return (
-        <div>
-            <div>
+        <div className='main'>
+            <div className='title'>
                 <h4>Hello, my name is Rafael. I am a Web Developer liviving in London, UK.</h4>
-                <img src={HomeBg} alt="Home" />
+                <div className='image'>            
+                    <img src={HomeBg} alt="Home" />
+                </div>
             </div>
         </div>
     )
