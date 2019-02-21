@@ -12,13 +12,13 @@ export default function Projects() {
             <div className='container'>
                 <div className='project1'>
                     <p>KODFLIX</p>
-                    <p>Project based on re-create Netflix </p>
                     <img src={Kodflix} alt='Kodflix Project' />
+                    <p>Project based on re-create Netflix </p>
                 </div>
                 <div className='project2'>
                     <p>KOINALYSIS</p>
-                    <p>Team Project to display Crypto currencies prices </p>
                     <img src={Koinalysis} alt='Koinalysis Project' />
+                    <p>Team Project to display Crypto currencies prices </p>
                 </div>
             </div>
         </div>
