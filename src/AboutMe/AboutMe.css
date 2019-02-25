@@ -13,8 +13,13 @@
 }
 
 .content {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.content2 {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 @media only screen and (max-width: 600px) {
