@@ -35,12 +35,12 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backdrop}
         <main>
           <HashRouter>
             <div className="App-body">
+              <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+              <SideDrawer show={this.state.sideDrawerOpen} />
+              {backdrop}
               <LeftSocial />
               <Route exact path='/' component={Home} />
               <Route exact path='/aboutme' component={AboutMe} />
