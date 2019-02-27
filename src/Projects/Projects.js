@@ -1,12 +1,11 @@
 import React from 'react';
-import '../Projects/Projects.css';
 import Kodflix from './Images/kodflix.png';
 import Koinalysis from './Images/koinalysis.png'
 
 export default function Projects() {
     return (
         <div className='main'>
-            <div className='projectTitle'>
+            <div className='title'>
                 <h3>Recent Projects: Samples of some of my work from the past year.</h3>
             </div>
             <div className='container'>

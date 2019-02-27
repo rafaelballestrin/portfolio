@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashRouter, Link } from 'react-router-dom';
 import '../SideDrawer/DrawerToggleButton';
-import './Toolbar.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 
 const toolbar = props => (

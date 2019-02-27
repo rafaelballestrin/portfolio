@@ -3,6 +3,7 @@
     left: 0;
     width: 100%;
     background: none;
+    font-size: 1.3rem;
 }
 
 .toolbar__navigation {
@@ -44,7 +45,7 @@
 
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active {
-    color: blue;
+    color: #164D71;
 }
 
 @media (max-width: 768px) {

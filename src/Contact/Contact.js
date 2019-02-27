@@ -4,7 +4,7 @@ import Email from './Images/contact.svg'
 export default function Contact() {
     return (
         <div>
-            <div>
+            <div className='title'>
                 <h3>Contact</h3>
             </div>
             <div className='container'>

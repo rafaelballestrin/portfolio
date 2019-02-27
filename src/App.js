@@ -55,23 +55,4 @@ class App extends Component {
   }
 }
 
-//   render() {
-//     return (
-//       <HashRouter>
-//         <div className="App">
-//           <div className="App-body">
-//             <MenuResponsive />
-//             <LeftSocial />
-//             <Route exact path='/' component={Home} />
-//             <Route exact path='/aboutme' component={AboutMe} />
-//             <Route exact path='/projects' component={Projects} />
-//             <Route exact path='/contact' component={Contact} />
-//             <Footer />
-//           </div>
-//         </div>
-//       </HashRouter>
-//     );
-//   }
-// }
-
 export default App;

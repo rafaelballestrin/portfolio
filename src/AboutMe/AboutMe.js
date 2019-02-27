@@ -1,5 +1,4 @@
 import React from 'react';
-import './AboutMe.css';
 import AboutMe from './Images/AboutMe1.jpg';
 
 export default function aboutMe() {
