@@ -1,5 +1,7 @@
 import React from 'react';
-import Email from './Images/contact.svg'
+import Linkedin from './Images/linkedin.svg';
+import Github from './Images/github.svg';
+import Email from './Images/email.svg';
 
 export default function Contact() {
     return (
@@ -9,11 +11,12 @@ export default function Contact() {
             </div>
             <div className='container'>
                 <div className='email-img'>
-                <img src={Email} alt="Email" />
+                    <img src={Email} alt="Email" />
                 </div>
                 <div className='email-title'>
                     <p>rafaelballestrin@gmail.com</p>
                 </div>
+                
             </div>
         </div>
     )
