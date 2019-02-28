@@ -1,4 +1,4 @@
-img {
+/* img {
     display: block;
     width: 95%;
     height: auto;
@@ -6,4 +6,24 @@ img {
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
+} */
+
+/* .title {
+    background-image: url('./Images/homePhoto.jpg');
+} */
+/* 
+.image {
+    width: 100%;
+    height: auto;
+    background-image: url('./Images/homePhoto.jpg');
+} */
+
+.main {
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('./Images/homePhoto.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
 }
