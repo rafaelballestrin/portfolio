@@ -2,7 +2,6 @@ import React from 'react';
 import { HashRouter, Link } from 'react-router-dom';
 import '../SideDrawer/DrawerToggleButton';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-import Logo from '../../MenuBurger/LogoRB.svg';
 
 const toolbar = props => (
   <header className="toolbar">
